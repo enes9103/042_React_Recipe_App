@@ -57,7 +57,6 @@ export const RecipeHeader = styled.h1`
 
 export const ImgDiv = styled.div`
   /* anasayfadaki aşçı resminin en dış kutusu */
-
   display: flex;
   justify-content: center;
   margin: 50px;

@@ -1,7 +1,6 @@
-
 import React from 'react'
 import { useLocation } from 'react-router-dom'
-import { DetailContainer, DetailPart, HeaderContainer, ImgContainer, IngredContainer, OtherPart } from './DetailsStyles';
+import { DetailContainer, DetailPart, HeaderContainer, ImgContainer, IngredContainer, OtherPart } from './DetailsStyle';
 import dietSvg from "../../assets/diet.svg";
 const Details = () => {
 const location=useLocation();

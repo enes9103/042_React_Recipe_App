@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Button, RecipeCard, RecipeHeader, RecipeImage } from './HomeStyles'
@@ -8,7 +9,7 @@ const navigate=useNavigate();
 const moreClick=()=> {
  navigate("/details" , {state:{recipe1}})
 }
-
+console.log(recipe1);
   return (
    <RecipeCard>
 <RecipeHeader>

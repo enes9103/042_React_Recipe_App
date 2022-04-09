@@ -23,7 +23,6 @@ const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=$
     if(query){ 
       const result = await axios.get(url);
     setFood(result.data.hits)
-  //  console.log(result);
     console.log(result.data.hits);
   
   }else {
