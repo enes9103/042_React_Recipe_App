@@ -1,4 +1,3 @@
-
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 // import { ExternalLink } from "react-external-link";
@@ -37,7 +36,6 @@ export const Hamburger = styled.div`
 
 export const MenuLink = styled(Link)`
   /* navbardaki 3 kelime ... tek tek about vs yazanların özellikleri */
-
   padding: 1rem 2rem;
   cursor: pointer;
   text-align: center;
@@ -76,7 +74,7 @@ background: #e1f1dd;
     width: 100%;
     /* gap:2px; */
     /* props olarak, osman=true geldi mesela */
-    max-height: ${({openMenu}) => (openMenu ? "300px" : "0")};
+    max-height:${({osman})=>(osman?"300px":"0")}
     /* 3 çizgiye ilk tıklandığında 300 px açılsın, sonraki tıklamada kapansın */
     /* max-height:300px yazarsak hep açık olur */
     /* transition: max-height 0.3s ease-in; */
@@ -88,7 +86,6 @@ export const Logo = styled(Link)`
   text-decoration: none;
   font-weight: 800;
   font-size: 2rem;
-
   i {
     font-family: "Girassol", sans-serif;
   }

@@ -1,11 +1,13 @@
+
 import React from 'react'
 import { useLocation } from 'react-router-dom'
-import { DetailContainer, DetailPart, HeaderContainer, ImgContainer, IngredContainer, OtherPart } from './DetailsStyle';
+import { DetailContainer, DetailPart, HeaderContainer, ImgContainer, IngredContainer, OtherPart } from './DetailsStyles';
 import dietSvg from "../../assets/diet.svg";
 const Details = () => {
-const location=useLocation();
-
- const recipe=   location.state.recipe1
+  const location = useLocation();
+  // geçerli URL'yi temsil eden konum nesnesini döndürür
+  const recipe = location.state.recipe1;
+  // navigate("/details", { state: { recipe } }); recipecard da bütün data json formatında state e gömülmüştü
 
   console.log(recipe);
 
@@ -54,7 +56,8 @@ const location=useLocation();
           {recipe.ingredientLines.map((malzeme, index) => (
             <div key={index}>
               <p>
-               {index + 1} * {malzeme}
+                {index + 1} * {malzeme}
+                {/* ingredientLines içinde bir sürü obje var tek tek yazdır, başına no ekle 1*{malzeme} gibi */}
               </p>
             </div>
           ))}
@@ -62,6 +65,6 @@ const location=useLocation();
       </DetailPart>
     </DetailContainer>
   );
-}
+};
 
 export default Details
