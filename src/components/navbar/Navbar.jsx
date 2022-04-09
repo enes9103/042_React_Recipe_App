@@ -41,7 +41,7 @@ const Navbar = () => {
           to={github}
           target="_blank"
         >
-          Githubb
+          Github
         </MenuLink>
         {/* React-router, Tek Sayfalık Uygulama için bir yönlendirme sistemidir. Tüm
         rotaların sayfanızda tanımlanması ve uygulamanızın içinde kapsüllenmesi
